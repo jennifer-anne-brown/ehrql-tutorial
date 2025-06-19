@@ -1,0 +1,8 @@
+version: "1.0"
+
+actions:
+  generate_dataset:
+    run: ehrql:v1 generate-dataset dataset_definition.py --output output/dummy_tables.csv.gz
+    outputs:
+      highly_sensitive:
+        dataset: output/dummy_tables.csv.gz
